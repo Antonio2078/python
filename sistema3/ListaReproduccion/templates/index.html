@@ -1,0 +1,7 @@
+{% load static %}
+<!doctype html>
+<link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}"/>
+
+{% for c in canciones%}
+    {{c.titulo}},{{c.autor}},{{c.genero}},
+{% endfor %}
